@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to count digits in an Number</title>
+</head>
+<body>
+    <h1>Program to count digits in an Number</h1>
+    <section>
+        <!-- Problem Statement -->
+        <h2>Problem Statement:</h2>
+        <p>Write a code in any programming language that counts the
+            digits in a number..</p>
+    </section>
+
+    <section>
+        <!-- Code -->
+        <h2>Code:</h2>
+    <pre>
+// JAVA Code to count number of
+// digits in an integer
+import java.util.*;
+
+class GFG {
+
+	static int countDigit(long n)
+	{
+		if (n/10 == 0)
+			return 1;
+		return 1 + countDigit(n / 10);
+	}
+
+	/* Driver code */
+	public static void main(String[] args)
+	{
+		long n = 345289467;
+		System.out.print("Number of digits : "
+						+ countDigit(n));
+	}
+}
+
+    </pre>
+    </section>
+
+    <section>
+        <!-- Sample input -->
+        <h2>Sample Input:</h2>
+        <b>long n = 345289467</b>
+        
+    </section>
+
+    <section>
+     <!-- sample Output -->
+     <h2>Sample Output:</h2>
+     <b>Number of digits : 9</b>
+    </section>
+
+    <Section>
+        <!-- Variables used in program -->
+        <h2> Variables:</h2>
+        <b>Number, count</b>
+    </Section>
+
+    <Section>
+        <!-- Complexity -->
+        <h2>Complexity:</h2>
+        <b>O(n)</b>
+    </Section>
+</body>
+</html>
